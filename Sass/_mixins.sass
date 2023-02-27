@@ -1,0 +1,19 @@
+@use 'variables'
+//Criação de mixin para centralização de conteúdo
+@mixin flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin title-size
+    color: #000000c0
+    font-size: 2.2rem
+    font-weight: 700
+    margin-bottom: .6rem
+
+@mixin mobile
+    //Media querie
+    @media(max-width: 1150px)
+        //Conteúdo
+        @content
+

@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.container-form-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e6e78;
+  height: 100vh;
+  padding: 1.8rem;
+  width: 40vw;
+}
+@media (max-width: 1150px) {
+  .container-form-image {
+    display: none;
+  }
+}
+.container-form-image img {
+  width: 38vw;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+  flex-direction: column;
+  padding: 0 5rem;
+  width: 60vw;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+@media (max-width: 1150px) {
+  .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.form-header .title {
+  font-size: 2rem;
+}
+.form-header .title h1:after {
+  background-color: #007acc;
+  border-radius: 1rem;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  height: 0.8rem;
+  width: 9rem;
+}
+.form-header p {
+  display: none;
+}
+@media (max-width: 1150px) {
+  .form-header p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+  }
+}
+.form-header .login-button {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1150px) {
+  .form-header .login-button {
+    margin-top: 2rem;
+  }
+}
+.form-header .login-button button {
+  background-color: #007acc;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+@media (max-width: 1150px) {
+  .form-header .login-button button {
+    padding: 1.2rem 9.1rem;
+  }
+}
+.form-header .login-button button a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.form-header .login-button button:hover {
+  background-color: #006db7;
+}
+.form-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+@media (max-width: 1150px) {
+  .form-input {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 30rem;
+    margin-top: -5rem;
+    overflow-y: scroll;
+  }
+}
+.form-input-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.form-input-content label {
+  color: rgba(0, 0, 0, 0.7529411765);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.form-input-content input {
+  border: none;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1098039216);
+  font-size: 1.8rem;
+  margin-right: 2.5rem;
+  padding: 1rem 1rem;
+}
+.form-input-content input:hover {
+  background-color: #dbdbdf;
+}
+.form-input-content input:focus-visible {
+  outline: 0.1rem solid #007acc;
+}
+.form-input-content input::placeholder {
+  color: rgba(0, 0, 0, 0.7450980392);
+}
+
+@media (max-width: 1150px) {
+  .gender-inputs {
+    margin-left: 1.65rem;
+  }
+}
+.gender-inputs-title h6 {
+  color: rgba(0, 0, 0, 0.7529411765);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+@media (max-width: 1150px) {
+  .gender-inputs-title h6 {
+    margin-top: 2.5rem;
+  }
+}
+.gender-inputs-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.1rem;
+  padding: 0 0 0.8rem;
+}
+@media (max-width: 1150px) {
+  .gender-inputs-group {
+    flex-direction: column;
+  }
+}
+.gender-inputs-group .gender-input {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1150px) {
+  .gender-inputs-group .gender-input {
+    margin-bottom: 0.2rem;
+  }
+}
+.gender-inputs-group .gender-input input {
+  margin-right: 0.6rem;
+}
+.gender-inputs-group .gender-input label {
+  color: rgba(0, 0, 0, 0.7529411765);
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.continue-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2.7rem;
+  border-radius: 0.6rem;
+  background-color: #007acc;
+  cursor: pointer;
+  padding: 1.2rem;
+}
+.continue-button button {
+  border: none;
+  background: none;
+}
+.continue-button button a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+.continue-button:hover {
+  background-color: #006db7;
+}
+
+/*# sourceMappingURL=style.css.map */
